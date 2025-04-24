@@ -57,6 +57,51 @@ namespace Domain.Configs.Seeding
                     OrderValue = 39.98m,
                     Currency = SupportedCurrencies.USD,
                     ClientId = 5
+                },
+                new Order
+                {
+                    Id = 6,
+                    OrderNumber = "ORD-001",
+                    OrderValue = 89.98m,
+                    Currency = SupportedCurrencies.USD,
+                    ClientId = 1,
+                    CreateDate = DateTime.UtcNow.AddDays(-50)
+                },
+                new Order
+                {
+                    Id = 7,
+                    OrderNumber = "ORD-002",
+                    OrderValue = 29.00m,
+                    Currency = SupportedCurrencies.USD,
+                    ClientId = 2,
+                    CreateDate = DateTime.UtcNow.AddDays(-40)
+                },
+                new Order
+                {
+                    Id = 8,
+                    OrderNumber = "ORD-003",
+                    OrderValue = 303.70m,
+                    Currency = SupportedCurrencies.USD,
+                    ClientId = 3,
+                    CreateDate = DateTime.UtcNow.AddDays(-30)
+                },
+                new Order
+                {
+                    Id = 9,
+                    OrderNumber = "ORD-004",
+                    OrderValue = 29.99m,
+                    Currency = SupportedCurrencies.USD,
+                    ClientId = 4,
+                    CreateDate = DateTime.UtcNow.AddDays(-20)
+                },
+                new Order
+                {
+                    Id = 10,
+                    OrderNumber = "ORD-005",
+                    OrderValue = 39.98m,
+                    Currency = SupportedCurrencies.USD,
+                    ClientId = 5,
+                    CreateDate = DateTime.UtcNow.AddDays(-10)
                 }
             );
         }
