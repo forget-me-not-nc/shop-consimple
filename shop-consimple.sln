@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shop-consimple", "shop-consimple\shop-consimple.csproj", "{7E0347ED-E295-456E-AAD2-CE5212A2EB19}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopConsimple", "shop-consimple\ShopConsimple.csproj", "{7E0347ED-E295-456E-AAD2-CE5212A2EB19}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{FB195D8F-E27A-4418-B820-99EEA40D62AF}"
 EndProject

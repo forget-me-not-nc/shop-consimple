@@ -11,9 +11,9 @@ namespace Repository.Concrete
         {
         }
 
-        public Task<List<Client>> GetClientsWithTodaysBirthdaysAsync(DateTime date)
+        public Task<List<Client>> GetClientsWithBirthdaysAsync(DateTime date)
         {
-            return _shopDbContext.Clients.Where(c => c.BirthDate.Date == date.Date).ToListAsync();
+            return _shopDbContext.Clients.Where(c => c.BirthDate.Day == date.Day && c.BirthDate.Month == date.Month).ToListAsync();
         }
     }
 }

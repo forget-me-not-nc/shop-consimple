@@ -1,6 +1,9 @@
+using Core.Mapper;
+using Core.Queries.Clients;
 using Domain.Context;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ShopConsimple.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +23,9 @@ builder.Services.AddControllers(cfg =>
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddRepositories();
+builder.Services.AddAutoMapper(typeof(ShopAutomapperProfile));
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GetClientsWithBirthdaysCommand).Assembly));
 
 var app = builder.Build();
 

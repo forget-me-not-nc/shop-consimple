@@ -5,6 +5,6 @@ namespace Repository.Abstract
 {
     public interface IClientRepository
     {
-        public Task<List<Client>> GetClientsWithTodaysBirthdaysAsync(DateTime date);
+        public Task<List<Client>> GetClientsWithBirthdaysAsync(DateTime date);
     }
 }
